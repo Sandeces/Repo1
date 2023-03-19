@@ -44,6 +44,11 @@ body {
   align-items: center;
   justify-content: space-between;
 }
+.contact{
+  grid-area: section;
+  text-align: center;
+  align-items: center;
+}
 
 #index{
   background: url(../img/index.jpg);
