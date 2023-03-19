@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  overflow-y: auto;
+  overflow-y: auto;
+}
+
+.section * {
+  display: flex;
+  background: rgb(248, 215, 165);
+  padding: 30px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  box-sizing: border-box;
+  display: grid;
+
+  /*grid template*/
+  grid-template-areas:
+    "header"
+    "section"
+    "footer";
+  grid-template-rows: 10vh 85svh 5vh;
+  padding: 0;
+}
+
+.header {
+  background-color: rgb(199, 106, 19);
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  border: none;
+}
+
+.section {
+  background: url(../img/index.jpg);
+  grid-area: section;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  background: rgb(199, 106, 19);
+  grid-area: footer;
+  padding: 0 24px;
+  border: none;
+}
+  .footer .link2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.75em;
+    margin: 12px;
+    width: unset;
+  }
+  .header .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .header .links .link {
+    margin: 8px;
+    font-size: 0.75em;
+    text-align: center;
+  }
+
+/*config tablet*/
+@media (min-width: 481px) and (max-width: 1199px) {
+  body {
+    font-size: 24px;
+  }
+
+  .grid-container {
+    grid-template-areas:
+      "header"
+      "section"
+      "footer";
+    grid-template-rows: 10vh 85vh 5vh;
+    padding: 0;
+  }
+
+  .header {
+    padding: 0 24px;
+  }
+
+  .header .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .header .links .link {
+    margin: 8px;
+    font-size: 0.75em;
+    text-align: center;
+  }
+}
+
+/*config desktop*/
+@media (min-width: 1200px) {
+  body {
+    font-size: 30px;
+    justify-content: center;
+    align-content: center;
+  }
+  .grid-container {
+    grid-template-areas:
+      "header"
+      "section"
+      "footer";
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-columns: none;
+    padding: 0;
+  }
+
+  .header {
+    padding: 0 24px;
+  }
+
+  .header .links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .header .links .link {
+    font-size: 0.75em;
+    margin: 12px;
+    width: unset;
+  }
+   .footer .link2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.75em;
+    margin: 12px;
+    width: unset;
+  }
+}
