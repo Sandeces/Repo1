@@ -39,11 +39,23 @@ body {
 }
 
 .section {
-  background: url(../img/index.jpg);
   grid-area: section;
   text-align: center;
   align-items: center;
   justify-content: space-between;
+}
+
+#index{
+  background: url(../img/index.jpg);
+}
+#servicios{
+  background: url(../img/servicio.jpg);
+}
+#nosotros{
+  background: url(../img/nosotros.jpg);
+}
+#historia{
+  background: url(../img/historia.jpeg) center fixed no-repeat;
 }
 
 .footer {
