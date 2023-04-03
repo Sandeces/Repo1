@@ -1,0 +1,441 @@
+$colorUno: #262A56;
+$colorDos: #0b2447e8;
+
+/* diseño pagina principal*/
+
+#indexbg{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;  
+    margin: 0;
+    overflow-y: auto;
+    overflow-y: overlay;
+    background: url(../img/index.jpg);
+    background-position: center;
+}
+.nav-link{
+    display: inline-block;
+    background: #245953;
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+
+}
+.logo{
+    display: flex;
+    height: 50px;
+    box-sizing: border-box;
+}
+.nav-link:hover{
+    background: rgb(253, 174, 174);
+    color: #000000;
+}
+
+nav{
+    width: 98vw;
+    background-color: $colorUno;
+    padding: 0 20px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header{
+    display: grid;
+    grid-area: header;
+}
+
+section{
+    display: grid;
+    grid-area: section;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: normal;
+    
+  }
+  
+  .flex-items:nth-child(1) {
+    display: flex;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: center;
+    background: $colorDos;
+    width: 200px;
+    padding: 100px;
+    border-radius: 20px;
+    color: #fff;
+    animation: myAnimR 1.5s ease 0s 1 normal forwards;
+  }
+  
+  .flex-items:nth-child(2) {
+    display: flex;
+    flex-shrink: 5;
+    flex-basis: auto;
+    align-self: auto;
+    background: $colorDos;
+    width: 30%;
+    padding: 100px;
+    margin-left: 20px;
+    margin-top: 200px;
+    margin-bottom: 113px;
+    border-radius: 20px;
+    color: #fff;
+    overflow: hidden;
+    animation: myAnimL 1.5s ease 0s 1 normal forwards;
+  }
+
+
+footer{
+    display: grid;
+    grid-area: footer;
+    padding: 20px;
+    background: $colorUno;
+    border-radius: 10px;
+    width: 98vw;
+}
+
+footer .link2{
+    display:grid;
+    text-decoration: none;
+    color: #fff;
+    width: 250px;
+    font-size: 18px;
+}
+
+.grid-container{
+    grid-template-areas:
+    "header"
+    "section"
+    "footer";
+    grid-template-columns: 10vh 85vh 5vh;
+    padding: 0 5px;
+}
+/*animaciones*/
+
+@keyframes myAnimL {
+	0% {
+		opacity: 0;
+		transform: translateX(80px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes myAnimR {
+	0% {
+		opacity: 0;
+		transform: translateX(-80px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+
+/*config tablet*/
+
+
+
+/*diseño pagina Contacto*/
+
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+#contacbg{
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;  
+  margin: 0;
+  overflow-y: auto;
+  overflow-y: overlay;
+  background: url(../img/contacto.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+.contact_form{  
+  width: 460px; 
+  height: auto;
+  margin: 80px auto;
+  border-radius: 10px;  
+  padding-top: 30px;
+  padding-bottom: 20px;  
+  background-color: #fbfbfbbe; 
+  padding-left: 30px; 
+}
+
+
+input{
+  background-color: #fbfbfb; 
+  width: 408px; 
+  height: 40px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+}
+
+
+textarea{
+  background-color: #fbfbfb; 
+  width: 405px; 
+  height: 150px; 
+  border-radius: 5px;  
+  border-style: solid; 
+  border-width: 1px; 
+  border-color: #ab4493; 
+  margin-top: 10px;  
+  padding-left: 10px;
+  margin-bottom: 20px; 
+  padding-top: 15px; 
+}
+
+
+label{
+  display: block; 
+  float: center;  
+}
+
+
+button{
+  height: 45px; 
+  padding-left: 5px;
+  padding-right: 5px;   
+  margin-bottom: 20px; 
+  margin-top: 10px;   
+  text-transform: uppercase;
+  background-color: #ab4493; 
+  border-color: #ab4493; 
+  border-style: solid; 
+  border-radius: 10px;  
+  width: 420px;   
+  cursor: pointer;
+}
+
+
+button .form{
+  color: #fff; 
+}
+
+
+span{
+  color: #ab4493; 
+}
+
+.aviso{
+  font-size: 13px;  
+  color: #0e0e0e;  
+}
+
+
+h1{
+  font-size: 39px;  
+  text-align: letf; 
+  padding-bottom: 20px; 
+  color: #ab4493;
+}
+
+
+h3{
+  font-size: 16px; 
+  padding-bottom: 30px;
+  color: #0e0e0e;   
+}
+
+
+.form{
+  font-size: 14px; 
+  color: #0e0e0e; 
+}
+
+
+::-webkit-input-placeholder {
+ color: #a8a8a8;
+}
+
+
+::-webkit-textarea-placeholder {
+ color: #a8a8a8;
+}
+
+
+.formulario input:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+
+.formulario textarea:focus{
+  outline:0;
+  border: 1px solid #97d848;
+}
+
+/*diseño pagina Servicios*/
+
+#serv{
+  background: rgb(241,109,189);
+  background: linear-gradient(126deg, rgba(241,109,189,1) 11%, rgba(32,110,203,1) 93%);
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;  
+  margin: 0;
+  overflow-y: auto;
+  overflow-y: overlay;
+
+
+
+
+.tarjetas-container{
+  height: 430px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 200px;
+  align-items: center;
+}
+
+.tarjetas-container .tarjeta {
+  width: 330px;
+  height: 580px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition:  all 0.25s;
+  background-color: rgb(255, 244, 244);
+  align-items: center;
+  justify-content: center;
+}
+.tarjetas-container .tarjeta button{
+  width: 100px;
+}
+
+.tarjetas-container .tarjeta:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tarjetas-container .tarjeta img {
+  width: 330px;
+  height: 220px;
+}
+.tarjetas-container .tarjeta h1 {
+  font-weight: 600;
+}
+.tarjetas-container .tarjeta p {
+  padding: 0 1rem;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.header3{
+  display: grid;
+  grid-area: header3;
+}
+.section3{
+  display: grid;
+  grid-area: section3;
+}
+.footer3{
+  display: grid;
+  grid-area: footer3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.grid-container3{
+    box-sizing: border-box;
+    grid-template-areas:
+    "header3"
+    "section3"
+    "footer3";
+    grid-template-rows: 10vh 85vh 5vh;
+    grid-template-columns: 100vw;
+    padding: 0 5px;
+}
+}
+
+/*diseño pagina Nosotros*/
+
+#nos{
+  background: rgb(241,109,189);
+  background: linear-gradient(126deg, rgba(241,109,189,1) 11%, rgba(32,110,203,1) 93%);
+  background-size: cover;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;  
+  margin: 0;
+  overflow-y: auto;
+  overflow-y: overlay;
+
+}
+
+.section4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer4{
+  display: grid;
+  grid-area: footer3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card{
+  height: 630px;
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 150px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+
+}
+.card img{
+  width: 600px;
+  height: 500px;
+}
+
+#hist{
+  background: rgb(241,109,189);
+  background: linear-gradient(126deg, rgba(241,109,189,1) 11%, rgba(32,110,203,1) 93%);
+  background-size: cover;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;  
+  margin: 0;
+  overflow-y: auto;
+  overflow-y: overlay;
+}
+
+
+
