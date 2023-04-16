@@ -154,7 +154,7 @@ footer .link2{
 .tarjetas-container{
   height: auto;
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   flex-wrap: nowrap;
   justify-content: center;
   margin-top: 30px;
@@ -425,7 +425,7 @@ footer .link2{
   .tarjetas-container{
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     margin-top: 30px;
@@ -524,21 +524,20 @@ footer .link2{
     width: 350px;
     font-size: 23px;
   }
-}
-
-@media (max-widht:400px) {
   .tarjetas-container{
     height: auto;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
     flex-wrap: nowrap;
     justify-content: center;
     margin-top: 30px;
     margin-bottom: 62px;
     align-items: center;
   }
-  
 }
+
+ 
+
 
 
 
